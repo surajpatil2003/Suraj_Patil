@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suraj Patil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="icon.png">
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Google Fonts (Optional for style) -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('about')">About</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            <li><a href="#" onclick="showSection('designs')">My Designs</a></li>
+            <li><a href="#" onclick="showSection('career')">Career</a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <h1>Suraj Patil</h1>
+        <img src="suraj.png" alt="My Photo" class="profile-pic">
+        <p>Video Editing | Frame Making | Digital Invitation Cards Making</p>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="profile-info">
+            <h2 class="welcome-title">Welcome to My Dashboard</h2>
+        </div>
+        <div class="services">
+            <h3>My Services</h3>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h4>Video Editing</h4>
+                    <p>We create professional and creative video edits tailored to your needs.</p>
+                </div>
+                <div class="service-card">
+                    <h4>Frame Making</h4>
+                    <p>Designing customized digital frames for social media, events, and promotions.</p>
+                </div>
+                <div class="service-card">
+                    <h4>Digital Invitation Cards Making</h4>
+                    <p>Crafting beautiful and personalized digital invitation cards for all occasions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm a creative enthusiast with a passion for digital design and media. I specialize in video editing, making custom digital frames, and crafting unique digital invitation cards. My goal is to bring your moments and ideas to life through engaging and visually appealing content. Whether it's a wedding invite, a birthday video, or social media content.</p>
+    </section>
+
+  <!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+        <!-- Left Contact Info -->
+        <div class="contact-info">
+            <div class="contact-box">
+                <i class="fas fa-envelope"></i>
+                <h4>Email</h4>
+                <p><a href="mailto:suraj.patil@example.com">patilsuraj2837@gmail.com</a></p>
+            </div>
+            <div class="contact-box">
+                <i class="fas fa-phone-alt"></i>
+                <h4>Phone</h4>
+                <p><a href="tel:+1234567890">7385449530</a></p>
+            </div>
+        </div>
+
+        <!-- Right Contact Form -->
+       <!-- Contact Form Section -->
+<div class="contact-form">
+    <form id="contactForm" action="https://formspree.io/f/xkgroorb" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="mobile" placeholder="Mobile Number" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    <p id="formSuccess" style="display:none; color: green; font-weight: bold; margin-top: 10px;">
+        Thank you! Your message has been sent successfully.
+    </p>
+</div>
+
+
+    </div>
+</section>
+
+
+    <!-- My Designs Section -->
+    <section id="designs" class="designs">
+        <h2>My Designs</h2>
+        <div class="designs-gallery">
+             <div class="design-item">
+                <img src="3DLEDPhotoframe.jpg" alt="3DLEDPhotoframe"  onclick="openModal(this)">
+                <p>3D LED Miniature Photo Frame</p>
+            </div>
+	    <div class="design-item">
+                <img src="3DPhotoframe.jpg" alt="3DPhotoframe" onclick="openModal(this)">
+		<p>3D Photo Frame</p>
+            </div>
+            <div class="design-item">   
+		<img src="Anniversaryframe.jpg" alt="Anniversaryframe" onclick="openModal(this)">
+		<p>Anniversary Frame</p>
+            </div>
+            <div class="design-item">
+		<img src="BabyBirthMemoryframe.jpg" alt="BabyBirthMemoryframe" onclick="openModal(this)">
+		<p>Baby Birth Memory Frame</p>
+            </div>
+            <div class="design-item">     
+                <img src="BabyFirstBirthdayframe.jpg" alt="BabyFirstBirthdayframe" onclick="openModal(this)">
+		<p>Baby First Birthday Frame</p>
+            </div>
+	    <div class="design-item">	
+                <img src="CustomizedCoffeeMug.jpg" alt="CustomizedCoffeeMug" onclick="openModal(this)">
+		<p>Customized Coffee Mug</p>
+            </div>
+	    <div class="design-item">	
+                <img src="HeartBirthdayandAnniversaryframe.jpg" alt="HeartBirthdayandAnniversaryframe" onclick="openModal(this)">
+		<p>Heart Birthday And Anniversary Frame</p>
+            </div>
+	  
+	   <div class="design-item">	
+                <img src="PersonalizedInstagramframe.jpg" alt="PersonalizedInstagramframe" onclick="openModal(this)">
+		<p>Personalized Instagram Frame</p>
+            </div>
+                <div class="design-item">	
+                <img src="Personalized3Dminiatureframe.jpg" alt="Personalized3Dminiatureframe" onclick="openModal(this)">
+		<p>Personalized 3D Miniature Frame</p>
+            </div>
+                <div class="design-item">	
+                <img src="Alltypeidentitycard.png" alt="Alltypeidentitycard" onclick="openModal(this)">
+		<p>All Type Identity Card</p>
+            </div>
+	   <div class="design-item">
+		<img src="WeddingInvitationCard.jpg" alt="WeddingInvitationCard" onclick="openModal(this)">
+		<p>Wedding Invitation Card</p>
+            </div>
+    	 <div class="design-item">
+              <video width="250" height="150" controls>
+              <source src="SPedit2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+              <p>Engagement Invitation Video</p>
+	</div>
+	<div class="design-item">
+              <video width="250" height="150" controls>
+              <source src="SPedit.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+              <p>Wedding Invitation Video</p>
+	</div>
+	<div class="design-item">
+              <video width="250" height="150" controls>
+              <source src="SPedit1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+              <p>Wedding Invitation Video</p>
+	</div>
+        </div>
+    </section>
+    <!-- Modal for Full-Screen View -->
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+</div>
+    
+
+
+
+
+    <!-- Career Section -->
+    <section id="career" class="career">
+        <h2>Career Opportunities</h2>
+       		<p>We're looking for passionate and creative individuals to join our growing team. If you have a knack for visual storytelling, a love for design, or a talent for crafting unique digital experiences, we want to hear from you!</p>
+    	<ul>
+        	<li>🎬 Video Editors – Experience with tools like Adobe Premiere Pro, Kinemaster,Alight Motion, or CapCut.</li>
+        	<li>🖼️ Frame Designers – Creative thinkers skilled in Photoshop, Canva, or Figma.</li>
+        	<li>💌 Invitation Designers – Artistic minds with an eye for layout and typography.</li>
+    	</ul>
+    </section>
+
+    <footer>
+        <p>© 2025 Suraj Patil All Right Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="script1.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
